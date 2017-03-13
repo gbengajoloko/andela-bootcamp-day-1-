@@ -20,4 +20,7 @@ describe("get all prime numbers less than number", function (){
 	it("it shoild return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29] for 30",function(){
 		expect(myapp.getPrimes(30)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
 	});
+	it("it should return [] for 1", function(){
+		expect(myapp.getPrimes(0)).toEqual([ ]);
+	});
 });
